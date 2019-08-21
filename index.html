@@ -2,6 +2,16 @@
 <html>
   <head>
 
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146124277-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-146124277-1');
+	</script>
+
     <title>Grúas García y Blanco</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
 
@@ -44,19 +54,6 @@
         color: #fff;
       }
 
-      @media screen and (max-width: 1500px) {
-        .caption {
-          top: 10%;
-        }
-      }
-
-
-      @media screen and (max-width: 800px) {
-        .caption {
-          top: 5%;
-        }
-      }
-
       .caption span,
       .caption a,
       .caption a:link,
@@ -75,6 +72,35 @@
         font-size: 50px;
         font-weight: 400;
       }
+
+
+      @media screen and (max-width: 1500px) {
+        .caption {
+          top: 10%;
+        }
+        .caption .logo{
+        	width: 150px;
+      	}
+      }
+
+
+      @media screen and (max-width: 800px) {
+        .caption {
+          top: 5%;
+        }
+        .caption .logo{
+        	width: 100px;
+      	}
+      	.caption .name {
+	        font-size: 40px;
+	    }
+        .caption span,
+        .caption a {
+          font-size: 20px;
+      	}
+
+      }
+
 
     </style>
   </head>
